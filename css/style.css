@@ -605,7 +605,7 @@ header {
   font-weight: 600;
 }
 .margin-left-20 {
-  margin-left: 5px;
+  margin-left: 30px;
 }
 .padding-20 {
   padding-left: 20px;
@@ -3797,7 +3797,7 @@ h6 {
 
 .account_tabs .nav-link {
   display: block;
-  padding: 8px 10px !important;
+  padding: 8px 14px !important;
   color: #242424;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -4150,6 +4150,9 @@ h6 {
   width: 100%;
   background: #e5e5e5;
 }
+.height-0 {
+  height: 250px !important;
+}
 .achieved-upload {
   float: right;
   margin-top: 27px !important;
@@ -4180,23 +4183,43 @@ h6 {
   line-height: 24px !important;
   font-family: "Montserrat", sans-serif;
   margin-top: 20px !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .heading p {
   color: #000 !important;
+  margin-top: 4px;
 }
-.heading_inline a {
+.waste a {
+  margin-top: -5px;
   margin-right: 10px !important;
 }
-.heading_inline button {
+.heading_inline {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.float {
+  float: right !important;
+}
+.add-package {
   background-color: #5855d6;
   color: #fff;
   padding: 10px 15px !important;
   border: none;
   outline: none;
   border-radius: 5px !important;
+  text-decoration: none;
+}
+.tester-add {
+  background-color: #5855d6;
+  color: #fff !important;
+  padding: 5px 8px !important;
+  border: none;
+  outline: none;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  border-radius: 5px !important;
+  text-decoration: none;
 }
 .all_applied_jobs li:last-child {
   border-bottom: 0;
@@ -4209,7 +4232,12 @@ h6 {
   line-height: 24px;
   margin-bottom: 0;
 }
-
+.top-border {
+  border-top: 1px solid #00000033 !important;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
 .heading-span-green {
   color: #56c90fb0;
   margin-left: 5px !important;
@@ -4220,7 +4248,24 @@ h6 {
   margin-left: 5px !important;
   margin-top: -3px !important;
 }
-
+.table_wrapper table {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.margin-00 {
+  margin-left: 12px !important;
+  margin-bottom: 12px !important;
+  margin-right: 12px !important;
+}
+.padding-10 {
+  padding: 10px 20px !important;
+}
+.margin-top-renew {
+  margin-top: 15px !important;
+}
+.margin-left-12 {
+  margin-left: 12px !important;
+}
 .heading-span-purple {
   background: #5855d666 !important;
   color: #5855d6 !important;
@@ -4237,7 +4282,20 @@ h6 {
   font-weight: 500 !important;
   padding: 5px 8px;
   margin-left: 5px !important;
-  border-radius: 5px !important;
+  border-radius: 20px !important;
+}
+.heading-span-grey {
+  background: #c4c4c4cc !important;
+  color: #5855d6 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 5px 8px;
+  margin-left: 10px !important;
+  border-radius: 8px !important;
+  margin-top: -5px !important;
+}
+.font-size-8 {
+  font-size: 8px !important;
 }
 .critical {
   background: #ff2c554d !important;
@@ -4282,7 +4340,9 @@ h6 {
   display: inline-block !important;
   width: auto !important;
 }
-
+.font-size-12 {
+  font-size: 12px !important;
+}
 .view_dt_job li:last-child {
   padding: 15px 0 0 0 !important;
 }
@@ -4294,15 +4354,47 @@ h6 {
   margin-right: 8px;
   color: #04a4a6;
 }
-
+.vw1255 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
+.vw1255 i {
+  margin-right: 8px;
+  color: #efefef;
+}
+.wrapper-revenue {
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.total_revenue {
+  text-align: center;
+  justify-content: center;
+  background: #5855d64d;
+  margin: 0 auto;
+  color: #0e1566;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
 .vw1254 {
   font-size: 14px;
   color: #757575;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 24px;
 }
-
+.color-dark {
+  color: #00000080;
+}
 .apled_btn50 {
   margin-top: 20px;
   font-size: 12px;
@@ -4839,24 +4931,25 @@ h6 {
 }
 .tester-items {
   background: #0e156633;
-  padding: 20px !important;
+  padding: 10px !important;
   margin-bottom: 20px !important;
 }
+.tester-items td {
+  padding-left: 20px !important;
+}
 .tester-items td:first-child {
-  border-left-style: solid;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   padding-left: 20px;
-  padding-right: 0;
+  padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 10px;
 }
 .tester-items td:last-child {
-  border-left-style: solid;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -4900,12 +4993,11 @@ td {
 .header-tester {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center !important;
   justify-content: space-between;
-  padding: 5px 0px;
 }
 .header-tester h6 {
-  font-size: 17px;
+  font-size: 20px !important;
   font-weight: 600;
 }
 .tester-tester button {
@@ -4915,22 +5007,18 @@ td {
   border-radius: 25px;
   padding: 10px 20px;
 }
+.tester-tester a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrrat", sans-serif !important;
+}
 .tester-tester {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.new-edit {
-  background: #c0beff66;
-  color: #9694ff;
-  border-radius: 25px;
-  margin-right: 5px;
-}
-.new-bin {
-  background: #ff5e7d66;
-  color: #ff2c55;
-  border-radius: 25px;
-  margin-right: 5px;
+.new-del {
+  margin-right: 20px;
 }
 .margin-left-11 {
   margin-left: 25px !important;
@@ -5336,7 +5424,6 @@ td {
   padding-top: 24px;
   color: #847577;
 }
-
 .delete_icon:hover {
   color: #5855d6 !important;
 }
@@ -6057,6 +6144,7 @@ td {
   padding: 5px 4px !important;
   border: none;
   outline: none;
+  text-align: center;
   margin-top: 3px;
   text-transform: capitalize;
   border-radius: 5px;
